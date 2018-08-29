@@ -54,5 +54,33 @@ git branch 查看当前分支*表示当前HEAD指向的分支
 测试dev分支和master分支出现冲突，就是当两个分支都更改了的时候
 git merge --no-ff -m "" dev//合并分支禁用fast forward
 git stash可以把当前工作现场存储起来等以后恢复现场后继续工作
-
+feature-vulcan分支还没有被合并，如果删除，将丢失掉修改，如果要强行删除，需要使用大写的-D参数。
+git branch -D feature-vulcan
 修复bug
+推送失败的时候
+git pull也失败了，原因是没有指定本地dev分支与远程origin/dev分支的链接，根据提示，设置dev和origin/dev的链接：
+
+$ git branch --set-upstream-to=origin/dev dev
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+再pull：
+
+$ git pull
+然后解决冲突后
+$ git push origin dev
+命令git tag <tagname>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+
+命令git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+
+命令git tag可以查看所有标签。
+
+
+
+
+
+
+
+
+
+
+
+
