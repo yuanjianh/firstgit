@@ -44,4 +44,12 @@ git branch 查看当前分支*表示当前HEAD指向的分支
 合并某分支到当前分支：git merge <name>
 
 删除分支：git branch -d <name>
+
 修改master时
+
+
+
+
+
+测试dev分支和master分支出现冲突，就是当两个分支都更改了的时候
+
