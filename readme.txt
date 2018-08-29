@@ -55,3 +55,4 @@ git branch 查看当前分支*表示当前HEAD指向的分支
 git merge --no-ff -m "" dev//合并分支禁用fast forward
 
 
+修复bug
