@@ -52,7 +52,7 @@ git branch 查看当前分支*表示当前HEAD指向的分支
 
 
 测试dev分支和master分支出现冲突，就是当两个分支都更改了的时候
-git merge --no-ff -m "" dev//合并分支禁用fast forward
+git merge --no-ff -m "" dev//合并分支禁用fast&forward
 git stash可以把当前工作现场存储起来等以后恢复现场后继续工作
 feature-vulcan分支还没有被合并，如果删除，将丢失掉修改，如果要强行删除，需要使用大写的-D参数。
 git branch -D feature-vulcan
