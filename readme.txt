@@ -84,14 +84,3 @@ $ git push origin dev
 
 
 
-
-
-
-
-
-
-=======
-git merge --no-ff -m "" dev//合并分支禁用fastANDforward
->>>>>>> dev
-
-
